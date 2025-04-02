@@ -51,4 +51,4 @@ def get_x_y_coordinate_from_part(part):
 if __name__ == '__main__':
     # create_csv_data_file('alex2.csv', "/home/drosophila-lab/Documents/Fecundity/AlexanderDataClasses")
     # get_actual_total('alex2.csv', 'alex2_sums.csv')
-    create_csv_data_file('v1.csv', "/home/drosophila-lab/Documents/Fecundity/Lithium-Caps-Organization/data-development/data-cap-sliced")
+    create_csv_data_file('v1.csv', "/home/drosophila-lab/Documents/04-30-cap-800x800-sliced-Alexander")
