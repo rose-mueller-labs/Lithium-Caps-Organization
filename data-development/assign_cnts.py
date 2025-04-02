@@ -9,4 +9,4 @@ def assign_random_cnts(path):
         os.rename(old_file, new_file)
 
 if __name__ == '__main__':
-    assign_random_cnts("/Users/shreyanakum/Downloads/Lithium-Caps-Organization/data-sliced")
+    assign_random_cnts("/home/drosophila-lab/Documents/Fecundity/Lithium-Caps-Organization/data-development/data-cap-sliced")

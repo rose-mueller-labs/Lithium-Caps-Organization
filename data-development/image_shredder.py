@@ -42,4 +42,4 @@ def main(path): # changed argv into path
             split_image(outpath, imgpath, x)
     print("Finished!")
 
-main("/Users/shreyanakum/Downloads/Lithium-Caps-Organization/data-development/data") # to run, type: > python3 image_shredder.py [folder-path]
+main("/home/drosophila-lab/Documents/Fecundity/Lithium-Caps-Organization/data-development/data-cap") # to run, type: > python3 image_shredder.py [folder-path]
