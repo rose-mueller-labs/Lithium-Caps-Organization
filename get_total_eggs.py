@@ -8,7 +8,7 @@ import pandas as pd
 def create_csv_data_file(csv_name, data_path):
     with open(csv_name, "w", newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Population', 'Day', 'CapNumber','x', 'y', 'Filename', 'EggCount'])
+        writer.writerow(['Population', 'Day', 'CapNumber','x', 'y', 'Part', 'Filename', 'EggCount'])
         for img in os.listdir(f"{data_path}"):
             # eggs3countnCO1 Control 04-30 13 pt46.jpg
             # predicted_eggs = predict_egg_count(f"{data_path}/{label}/{img}")
@@ -19,7 +19,7 @@ def create_csv_data_file(csv_name, data_path):
             cap_num = img.split(' ')[3]
             part = img.split('pt')[1].split('.')[0]
             x, y = get_x_y_coordinate_from_part(part)
-            writer.writerow([population, day, cap_num, x, y, img, actual_eggs])
+            writer.writerow([population, day, cap_num, x, y, part, img, actual_eggs])
 
 def get_actual_total(csv_path):
     # get all unique names => get the ones with the same names => get the actual counts => sum
